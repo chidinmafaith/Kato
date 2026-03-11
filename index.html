@@ -1,13 +1,88 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kató Akwete Waitlist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'kato-bg': '#F8F5F0',
+            'kato-brown': '#3E2723',
+            'kato-tan': '#D7C4A3',
+            'kato-dark-brown': '#2D1A11',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F8F5F0;
+      color: #3E2723;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col relative overflow-hidden bg-kato-bg">
+  <nav class="flex justify-between items-center py-6 px-8 md:px-16 max-w-7xl mx-auto w-full">
+    <a href="index.html" class="text-4xl font-serif font-bold italic tracking-tighter text-kato-brown">Kató</a>
+    <div class="hidden md:flex space-x-8 items-center font-serif text-lg text-kato-brown">
+      <a href="waitlist.html" class="hover:text-kato-tan transition-colors font-semibold">Join Waitlist</a>
+      <button class="hover:text-kato-tan transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+      </button>
+    </div>
+  </nav>
+  
+  <main class="flex-grow flex flex-col items-center justify-center px-4 relative z-10 pb-20">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl h-[800px] -z-10 flex justify-center items-center">
+        <div class="absolute w-72 h-[500px] bg-[#F4F4F4] rotate-[-12deg] -translate-x-[350px] shadow-2xl border border-black/5 overflow-hidden">
+            <div class="w-full h-full" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 40px, #8B5A44 40px, #8B5A44 45px, transparent 45px, transparent 80px, #3E2723 80px, #3E2723 82px)"></div>
+        </div>
+        <div class="absolute w-[450px] h-[550px] bg-[#B22222] rotate-[-4deg] -translate-x-[100px] shadow-2xl border border-black/20 z-10 overflow-hidden">
+            <div class="w-full h-full opacity-30" style="background-image: repeating-linear-gradient(90deg, transparent, transparent 20px, #000 20px, #000 22px)"></div>
+        </div>
+        <div class="absolute w-[400px] h-[500px] bg-[#5D4037] rotate-[6deg] translate-x-[150px] shadow-xl border border-black/10 z-0 overflow-hidden">
+            <div class="w-full h-full opacity-20" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, #fff 15px, #fff 17px)"></div>
+        </div>
+        <div class="absolute w-64 h-[480px] bg-[#556B2F] rotate-[18deg] translate-x-[380px] shadow-lg border border-black/10 -z-10 overflow-hidden">
+            <div class="w-full h-full opacity-40" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 30px, #000 30px, #000 32px)"></div>
+        </div>
+    </div>
+
+    <div class="text-center z-20 mt-12 bg-kato-bg/10 backdrop-blur-sm p-8 rounded-2xl">
+      <h1 class="font-serif text-6xl md:text-8xl font-bold text-white drop-shadow-md mb-2 tracking-wide">AKWETE</h1>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-kato-bg drop-shadow-md italic mb-6">
+        Sourced, Sold &<br />Shipped Worldwide
+      </h2>
+      
+      <div class="flex items-center justify-center space-x-4 mb-10 text-kato-bg drop-shadow-md">
+        <span class="font-serif text-xl">Handwoven Textiles</span>
+        <span class="text-2xl">⟡</span>
+        <span class="font-serif text-xl">From Eastern Nigeria</span>
+      </div>
+
+      <a href="waitlist.html" class="inline-block bg-kato-brown text-kato-bg font-serif text-xl px-10 py-4 rounded-sm hover:bg-kato-dark-brown transition-colors shadow-lg">
+        Join Our Priority Waitlist
+      </a>
+      
+      <div class="mt-8">
+        <a href="#" class="font-serif text-kato-bg drop-shadow-md underline underline-offset-4 hover:text-white transition-colors">
+          Click here for more information
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
 </html>
 
