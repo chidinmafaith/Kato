@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Kató Akwete Waitlist
 
-# Run and deploy your AI Studio app
+A beautiful, responsive waitlist landing page for Kató, featuring handwoven Akwete textiles from Eastern Nigeria.
 
-This contains everything you need to run your app locally.
+## Features
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop screens.
+- **Fading Slideshow**: A smooth, CSS-only background image crossfade animation showcasing the textiles.
+- **Modern UI**: Built with Tailwind CSS for clean, utility-first styling.
+- **Typography**: Uses Playfair Display for elegant serif headings and Inter for readable sans-serif body text.
 
-View your app in AI Studio: https://ai.studio/apps/d5d8d672-b1a4-4ccc-bdc9-2ba4b137f237
+## Tech Stack
+- HTML5
+- Tailwind CSS (via CDN)
+- Google Fonts
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+Since this is a static HTML project, no build step is required! 
 
+1. Clone or download the repository.
+2. Open `index.html` in your web browser to view the landing page.
+3. Navigate to `waitlist.html` to see the signup form.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## File Structure
+- `index.html` - The main landing page with the fading background slideshow.
+- `waitlist.html` - The waitlist signup form page.
+- `hio.png`, `Hu.png`, `io.png` - Background images used in the slideshow.
