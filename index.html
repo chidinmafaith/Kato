@@ -21,6 +21,28 @@
             'kato-brown': '#3E2723',
             'kato-tan': '#D7C4A3',
             'kato-dark-brown': '#2D1A11',
+          },
+          animation: {
+            'fade-1': 'fade1 15s infinite',
+            'fade-2': 'fade2 15s infinite',
+            'fade-3': 'fade3 15s infinite',
+          },
+          keyframes: {
+            fade1: {
+              '0%, 26%': { opacity: 1 },
+              '33%, 93%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            },
+            fade2: {
+              '0%, 26%': { opacity: 0 },
+              '33%, 60%': { opacity: 1 },
+              '66%, 100%': { opacity: 0 },
+            },
+            fade3: {
+              '0%, 60%': { opacity: 0 },
+              '66%, 93%': { opacity: 1 },
+              '100%': { opacity: 0 },
+            }
           }
         }
       }
@@ -44,38 +66,30 @@
     </div>
   </nav>
   
-  <main class="flex-grow flex flex-col items-center justify-center px-4 relative z-10 pb-20">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl h-[800px] -z-10 flex justify-center items-center">
-        <div class="absolute w-72 h-[500px] bg-[#F4F4F4] rotate-[-12deg] -translate-x-[350px] shadow-2xl border border-black/5 overflow-hidden">
-            <div class="w-full h-full" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 40px, #8B5A44 40px, #8B5A44 45px, transparent 45px, transparent 80px, #3E2723 80px, #3E2723 82px)"></div>
-        </div>
-        <div class="absolute w-[450px] h-[550px] bg-[#B22222] rotate-[-4deg] -translate-x-[100px] shadow-2xl border border-black/20 z-10 overflow-hidden">
-            <div class="w-full h-full opacity-30" style="background-image: repeating-linear-gradient(90deg, transparent, transparent 20px, #000 20px, #000 22px)"></div>
-        </div>
-        <div class="absolute w-[400px] h-[500px] bg-[#5D4037] rotate-[6deg] translate-x-[150px] shadow-xl border border-black/10 z-0 overflow-hidden">
-            <div class="w-full h-full opacity-20" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, #fff 15px, #fff 17px)"></div>
-        </div>
-        <div class="absolute w-64 h-[480px] bg-[#556B2F] rotate-[18deg] translate-x-[380px] shadow-lg border border-black/10 -z-10 overflow-hidden">
-            <div class="w-full h-full opacity-40" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 30px, #000 30px, #000 32px)"></div>
-        </div>
+  <main class="flex-grow flex flex-col justify-end md:justify-center px-4 md:px-16 relative z-10 pb-12 md:pb-20">
+    <div class="absolute inset-0 -z-10 w-full h-full bg-kato-brown">
+        <div class="absolute inset-0 w-full h-full bg-center bg-contain bg-no-repeat animate-fade-1" style="background-image: url('hio.png');"></div>
+        <div class="absolute inset-0 w-full h-full bg-center bg-contain bg-no-repeat animate-fade-2 opacity-0" style="background-image: url('Hu.png');"></div>
+        <div class="absolute inset-0 w-full h-full bg-center bg-contain bg-no-repeat animate-fade-3 opacity-0" style="background-image: url('io.png');"></div>
     </div>
 
-    <div class="text-center z-20 mt-12 bg-kato-bg/10 backdrop-blur-sm p-8 md:p-12 rounded-2xl">
-      <div class="flex items-center justify-center space-x-3 mb-6 text-[#FFE4C4] drop-shadow-md opacity-90">
-        <div class="h-[1px] w-8 md:w-16 bg-[#FFE4C4]/60"></div>
-        <span class="font-serif text-sm md:text-base">Handwoven Textiles</span>
-        <span class="font-serif text-sm md:text-base">From Eastern Nigeria</span>
-        <div class="h-[1px] w-8 md:w-16 bg-[#FFE4C4]/60"></div>
+    <div class="w-full max-w-7xl mx-auto flex justify-start">
+      <div class="text-center z-20 mt-12 bg-kato-brown/60 backdrop-blur-md p-8 md:p-12 rounded-2xl w-full max-w-2xl shadow-2xl">
+        <div class="flex items-center justify-center space-x-3 mb-6 text-[#FFE4C4] drop-shadow-md opacity-90">
+          <div class="h-[1px] w-8 md:w-16 bg-[#FFE4C4]/60"></div>
+          <span class="font-serif text-sm md:text-base">Handwoven Textiles From Eastern Nigeria</span>
+          <div class="h-[1px] w-8 md:w-16 bg-[#FFE4C4]/60"></div>
+        </div>
+
+        <h1 class="font-serif text-6xl md:text-8xl font-bold text-white drop-shadow-md mb-2 tracking-wide">AKWETE</h1>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#FFE4C4] drop-shadow-md italic mb-10">
+          Sourced, Sold &<br />Shipped Worldwide
+        </h2>
+
+        <a href="waitlist.html" class="inline-block bg-kato-bg text-kato-brown font-serif text-lg md:text-xl px-10 py-4 rounded-sm hover:bg-white transition-colors shadow-lg font-bold leading-tight">
+          Click here for more<br/>information
+        </a>
       </div>
-
-      <h1 class="font-serif text-6xl md:text-8xl font-bold text-white drop-shadow-md mb-2 tracking-wide">AKWETE</h1>
-      <h2 class="font-serif text-4xl md:text-5xl font-bold text-[#FFE4C4] drop-shadow-md italic mb-10">
-        Sourced, Sold &<br />Shipped Worldwide
-      </h2>
-
-      <a href="waitlist.html" class="inline-block bg-kato-bg text-kato-brown font-serif text-lg md:text-xl px-10 py-4 rounded-sm hover:bg-white transition-colors shadow-lg font-bold leading-tight">
-        Click here for more<br/>information
-      </a>
     </div>
   </main>
 </body>
