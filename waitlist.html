@@ -47,12 +47,6 @@
   
   <nav class="flex justify-between items-center py-6 px-8 md:px-16 max-w-7xl mx-auto w-full relative z-10">
     <a href="index.html" class="text-4xl font-serif font-bold italic tracking-tighter text-kato-brown">Kató</a>
-    <div class="hidden md:flex space-x-8 items-center font-serif text-lg text-kato-brown">
-      <a href="waitlist.html" class="hover:text-kato-tan transition-colors font-semibold">Join Waitlist</a>
-      <button class="hover:text-kato-tan transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-      </button>
-    </div>
   </nav>
   
   <main class="flex-grow flex items-center justify-center p-4 z-10 pb-20 relative">
@@ -82,13 +76,8 @@
           <input type="email" id="email" name="email" required class="w-full bg-[#D7C4A3]/40 border border-kato-brown/20 rounded-sm px-4 py-3 focus:outline-none focus:ring-2 focus:ring-kato-brown font-sans text-kato-brown" />
         </div>
 
-        <div>
-          <label for="expectations" class="block font-serif text-lg mb-2 text-kato-brown">What are you most expectant about?</label>
-          <textarea id="expectations" name="expectations" rows="4" placeholder="e.g., Specific patterns, limited collections, exclusive pre-orders..." class="w-full bg-[#D7C4A3]/40 border border-kato-brown/20 rounded-sm px-4 py-3 focus:outline-none focus:ring-2 focus:ring-kato-brown font-sans placeholder:text-kato-brown/50 resize-none text-kato-brown"></textarea>
-        </div>
-
         <button type="submit" id="submit-btn" class="w-full bg-kato-brown text-kato-bg font-serif text-xl py-4 rounded-sm hover:bg-kato-dark-brown transition-colors disabled:opacity-70">
-          Submit My Interest
+          Submit
         </button>
 
         <p class="text-center font-serif text-sm mt-6 text-kato-brown">
@@ -111,7 +100,6 @@
         const formData = {
           fullName: document.getElementById('fullName').value,
           email: document.getElementById('email').value,
-          expectations: document.getElementById('expectations').value,
           id: Date.now().toString(),
           createdAt: new Date().toISOString()
         };
